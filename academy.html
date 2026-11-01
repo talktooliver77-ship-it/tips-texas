@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TIPS Academy — Become a Certified Speaker, Trainer, or Coach</title>
+<meta name="description" content="The TIPS Academy: three professional certification programs — Certified Emerging Speaker (CES), Certified Professional Speaker (CPS), and Certified Professional Trainer & Coach (CPTC) — delivered by the Texas Institute of Public Speaking. First full intake opens 2027.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:#070d24; color:#eef1ff; line-height:1.6; }
+  a { text-decoration:none; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
+  header { border-bottom:1px solid rgba(255,196,0,.25); background:rgba(10,18,48,.92); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; flex-wrap:wrap; gap:10px; }
+  .brand { display:flex; align-items:center; gap:13px; }
+  .brand img { width:52px; height:52px; }
+  .brand h1 { font-size:15.5px; letter-spacing:.12em; font-weight:700; line-height:1.25; }
+  .brand small { display:block; letter-spacing:.3em; color:#ffc400; font-size:10.5px; font-weight:600; }
+  .navlinks a { color:#dfe6ff; margin-left:18px; font-size:14px; }
+  .navlinks a:hover, .navlinks a.on { color:#ffc400; }
+  .hero { text-align:center; padding:64px 0 50px; }
+  .plaque { display:inline-block; background:#000; border:2px solid #ffc400; border-radius:20px; padding:18px 22px; box-shadow:0 18px 50px rgba(0,0,0,.55); }
+  .plaque img { width:min(300px,72vw); display:block; border-radius:8px; }
+  .hero .kicker, .pagehero .kicker { color:#ffc400; letter-spacing:.3em; font-size:12.5px; font-weight:700; text-transform:uppercase; }
+  .hero h2 { font-family:Georgia,serif; font-size:clamp(34px,6vw,56px); line-height:1.12; margin:20px auto 14px; max-width:820px; }
+  .hero h2 em { color:#ffc400; font-style:normal; }
+  .hero p { color:#b9c3e8; max-width:660px; margin:0 auto; font-size:17px; }
+  .motto { margin-top:16px; color:#ffc400; font-family:Georgia,serif; font-size:19px; letter-spacing:.06em; }
+  .pagehero { text-align:center; padding:58px 0 30px; }
+  .pagehero h2 { font-family:Georgia,serif; font-size:clamp(30px,5vw,44px); margin:14px auto 12px; }
+  .pagehero p { color:#b9c3e8; max-width:680px; margin:0 auto; font-size:16.5px; }
+  .routes { display:grid; grid-template-columns:1fr 1fr; gap:26px; padding:24px 0 8px; }
+  .cols3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px; padding:22px 0 8px; }
+  @media (max-width:820px){ .routes,.cols3{ grid-template-columns:1fr; } }
+  .card { background:linear-gradient(160deg,#101c4a,#0a1230); border:1px solid rgba(255,196,0,.35); border-radius:18px; padding:36px 30px; display:flex; flex-direction:column; }
+  .card.gold { border:2px solid #ffc400; }
+  .card .tag { align-self:flex-start; font-size:11.5px; letter-spacing:.22em; font-weight:700; color:#0a1230; background:#ffc400; border-radius:20px; padding:5px 13px; text-transform:uppercase; }
+  .card .tag.blue { background:#3350c8; color:#fff; }
+  .card h3 { font-family:Georgia,serif; font-size:25px; margin:18px 0 10px; }
+  .card p { color:#b9c3e8; font-size:15.5px; flex:1; }
+  .card ul { color:#dfe6ff; font-size:14.5px; margin:14px 0 22px 18px; }
+  .card ul li { margin:6px 0; }
+  .btn { display:inline-block; text-align:center; background:#ffc400; color:#0a1230; font-weight:700; padding:15px 22px; border-radius:12px; font-size:16px; }
+  .btn:hover { background:#ffd94d; }
+  .btn.ghost { background:transparent; color:#ffc400; border:2px solid #ffc400; }
+  .btn.ghost:hover { background:rgba(255,196,0,.12); }
+  .fine { font-size:12.5px; color:#8b96c4; text-align:center; margin-top:12px; }
+  .section { max-width:820px; margin:0 auto; padding:16px 0 6px; }
+  .section h3 { font-family:Georgia,serif; font-size:26px; margin:26px 0 10px; }
+  .section p { color:#c6cfef; font-size:16px; margin:0 0 14px; }
+  .section ul { color:#dfe6ff; margin:0 0 16px 20px; }
+  .section ul li { margin:7px 0; }
+  .section a.inline { color:#ffc400; }
+  .integrity { margin:48px 0 0; border-top:1px solid rgba(255,196,0,.25); border-bottom:1px solid rgba(255,196,0,.25); padding:28px 10px; text-align:center; }
+  .integrity strong { color:#ffc400; }
+  .integrity p { max-width:760px; margin:0 auto; color:#dfe6ff; font-size:16.5px; }
+  .cta { text-align:center; padding:34px 0 8px; }
+  footer { padding:40px 0 46px; text-align:center; color:#8b96c4; font-size:13.5px; }
+  footer img { width:64px; height:64px; margin-bottom:10px; }
+  footer a { color:#ffc400; }
+  footer .flinks { margin:10px 0; }
+  footer .flinks a { color:#b9c3e8; margin:0 9px; }
+  footer .flinks a:hover { color:#ffc400; }
+  /* Academy additions */
+  .section ol { color:#dfe6ff; margin:0 0 16px 22px; }
+  .section ol li { margin:7px 0; }
+  .card .second { margin-top:10px; }
+  .fees { width:100%; border-collapse:collapse; margin:6px 0 16px; font-size:15.5px; }
+  .fees th, .fees td { border:1px solid rgba(255,196,0,.3); padding:10px 12px; text-align:left; color:#dfe6ff; }
+  .fees th { background:rgba(255,196,0,.1); color:#ffc400; font-family:Georgia,serif; font-weight:700; }
+  .fees td.num, .fees th.num { text-align:right; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="logo-seal.png" alt="TIPS seal">
+      <h1>TEXAS INSTITUTE OF PUBLIC SPEAKING<small>TIPS &middot; TRAIN &middot; CERTIFY &middot; PROVIDE PLATFORMS</small></h1>
+    </a>
+    <nav class="navlinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="certification.html">Certification</a><a href="academy.html" class="on">Academy</a><a href="roll.html">The Roll</a><a href="courses.html">Courses</a><a href="verify.html">Verify</a><a href="leadership.html">Leadership</a><a href="partner.html">Partner</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main class="wrap">
+
+  <section class="hero">
+    <div class="kicker">The TIPS Academy</div>
+    <h2>Become a Certified Speaker, <em>Trainer,</em> or Coach</h2>
+    <p>Build your communication expertise through professional certification programs delivered by the Texas Institute of Public Speaking.</p>
+    <div class="motto">Train &middot; Certify &middot; Provide Speaking Platforms</div>
+  </section>
+
+  <div class="integrity" style="margin-top:6px;">
+    <p><strong>Founding cohort in session</strong> — the Academy's first full intake opens in 2027. The three certification programs below are the Academy's permanent structure: explore them now, and be ready when admissions open.</p>
+  </div>
+
+  <section class="cols3">
+    <div class="card gold">
+      <span class="tag">Beginner Level</span>
+      <h3>Certified Emerging Speaker (CES)</h3>
+      <p>For beginners, students, aspiring public speakers, young professionals, entrepreneurs, and anyone seeking real communication confidence.</p>
+      <ul>
+        <li><strong>Duration:</strong> 4 weeks</li>
+        <li>Foundations of public speaking &amp; confidence</li>
+        <li>Speech structure, storytelling &amp; message craft</li>
+        <li>Voice, body language &amp; stage presence</li>
+        <li>Assessed final speech</li>
+        <li><strong>Tuition:</strong> 25,000 FCFA (Cameroon residents) &middot; $99 (International)</li>
+        <li><strong>Entry:</strong> Open enrollment — no experience required</li>
+      </ul>
+      <a class="btn" href="academy-ces.html">View Program &rarr;</a>
+      <a class="btn ghost second" href="academy.html#admissions">Enroll Now &rarr;</a>
+    </div>
+    <div class="card">
+      <span class="tag blue">Professional Level</span>
+      <h3>Certified Professional Speaker (CPS)</h3>
+      <p>For practicing speakers, aspiring keynote speakers, motivational speakers, corporate presenters, entrepreneurs, and communication professionals.</p>
+      <ul>
+        <li><strong>Duration:</strong> 8&ndash;12 weeks</li>
+        <li>Professional speaker identity &amp; positioning</li>
+        <li>Advanced speechwriting &amp; keynote craft</li>
+        <li>Audience psychology &amp; cross-cultural communication</li>
+        <li>Speaking business models, pricing &amp; client acquisition</li>
+        <li>Assessed professional keynote presentation</li>
+        <li><strong>Tuition:</strong> 75,000 FCFA (Cameroon residents) &middot; $299 (International)</li>
+        <li><strong>Entry:</strong> CES completion, or approved experience-based direct entry</li>
+      </ul>
+      <a class="btn" href="academy-cps.html">View Program &rarr;</a>
+      <a class="btn ghost second" href="academy.html#admissions">Apply Now &rarr;</a>
+    </div>
+    <div class="card">
+      <span class="tag blue">Advanced Level</span>
+      <h3>Certified Professional Trainer &amp; Coach (CPTC)</h3>
+      <p>For experienced speakers, trainers, teachers, facilitators, coaches, consultants, HR professionals, and corporate training specialists.</p>
+      <ul>
+        <li><strong>Duration:</strong> 12&ndash;16 weeks</li>
+        <li>Adult learning &amp; instructional design</li>
+        <li>Workshop facilitation &amp; group dynamics</li>
+        <li>Coaching techniques &amp; client development</li>
+        <li>Training evaluation &amp; performance measurement</li>
+        <li>Assessed training or coaching demonstration</li>
+        <li><strong>Tuition:</strong> 150,000 FCFA (Cameroon residents) &middot; $599 (International)</li>
+        <li><strong>Entry:</strong> CPS completion, or approved advanced direct entry</li>
+      </ul>
+      <a class="btn" href="academy-cptc.html">View Program &rarr;</a>
+      <a class="btn ghost second" href="academy.html#admissions">Apply Now &rarr;</a>
+    </div>
+  </section>
+  <p class="fine">Tuition is determined by your country of residence, not your nationality. Cameroon residents pay in FCFA; international students pay in USD.</p>
+
+  <div class="card gold" style="margin:34px 0 8px;">
+    <span class="tag">Best Value</span>
+    <h3>The Complete Certification Pathway</h3>
+    <p>One enrollment covering all three certifications — CES, CPS, and CPTC — unlocked in order as you pass each level. Bought separately, the three programs cost <strong>250,000 FCFA</strong> (Cameroon) or <strong>$997</strong> (International). The Complete Pathway is <strong>225,000 FCFA</strong> or <strong>$899</strong> — a saving of <strong>25,000 FCFA</strong> or <strong>$98</strong>.</p>
+    <ul>
+      <li>CES unlocks immediately; CPS unlocks after CES; CPTC unlocks after CPS</li>
+      <li>One certificate per completed level — each one earned by examination and assessment</li>
+      <li>Pause and resume under the Academy's program-access policy</li>
+    </ul>
+    <div>
+      <a class="btn" href="academy-pathway.html">Explore the Pathway &rarr;</a>
+      &nbsp; <a class="btn ghost" href="academy.html#admissions">Enroll in the Pathway &rarr;</a>
+    </div>
+  </div>
+
+  <section class="section">
+    <h3>Not sure where to begin? Choose your professional goal.</h3>
+    <p>Every certification stands on its own — you are never forced to complete all three. Start from the goal that matches your life today.</p>
+  </section>
+  <section class="routes" style="padding-top:2px;">
+    <div class="card">
+      <h3>I want to build confidence</h3>
+      <p>You speak in class, at work, in church, or in meetings — and you want to do it calmly, clearly, and well. Start at the beginning.</p>
+      <a class="btn" href="academy-ces.html">Start with CES &rarr;</a>
+    </div>
+    <div class="card">
+      <h3>I want to become a professional speaker</h3>
+      <p>You already speak, or you are ready to build a serious speaking career — keynotes, positioning, pricing, and clients.</p>
+      <a class="btn" href="academy-cps.html">Go to CPS &rarr;</a>
+    </div>
+    <div class="card">
+      <h3>I want to become a trainer or coach</h3>
+      <p>You teach, train, facilitate, or coach others — and you want the professional standard and the credential to prove it.</p>
+      <a class="btn" href="academy-cptc.html">Go to CPTC &rarr;</a>
+    </div>
+    <div class="card">
+      <h3>I want all three certifications</h3>
+      <p>You want the complete journey — emerging speaker, professional speaker, then trainer and coach — at the pathway price.</p>
+      <a class="btn" href="academy-pathway.html">See the Complete Pathway &rarr;</a>
+    </div>
+  </section>
+
+  <section class="section" id="admissions">
+    <h3>Admissions — opening with the 2027 intake</h3>
+    <p><strong>Admissions placeholder:</strong> the Academy's enrollment and application forms will open on this page with the 2027 intake. Four journeys will be served, each with its own form:</p>
+    <ul>
+      <li><strong>Student A — CES only:</strong> a beginner enrolls directly in the Certified Emerging Speaker program. Open enrollment, no experience required.</li>
+      <li><strong>Student B — direct entry to CPS:</strong> an experienced speaker applies for direct entry to the Certified Professional Speaker program, with evidence of practice. Admission by approval — the examinations and assessments still apply in full.</li>
+      <li><strong>Student C — direct entry to CPTC:</strong> an experienced trainer or coach applies for advanced direct entry to the Certified Professional Trainer &amp; Coach program, with evidence of training or coaching practice.</li>
+      <li><strong>Student D — the Complete Pathway:</strong> one enrollment for all three certifications, unlocked level by level as each is passed.</li>
+    </ul>
+    <p>Every form will ask for your country of residence, because tuition follows residence — Cameroon residents pay in FCFA, international students in USD. No student is ever charged automatically for another certification.</p>
+    <div class="cta">
+      <a class="btn" href="mailto:ceo@tolkzspeakers.com">Ask About Admissions &rarr;</a>
+      &nbsp; <a class="btn ghost" href="verify.html">Verify a TIPS Certificate &rarr;</a>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Institutional partnerships</h3>
+    <p>The Texas Institute of Public Speaking (TIPS) owns and operates the Academy: it delivers the training, administers the examinations and assessments, keeps student records, and issues every Academy certificate. TIPS is in discussion with the Cameroon National Speakers Association (CANASA) regarding a proposed professional certification partnership. Any such arrangement will be announced on this page if and when a formal agreement is concluded.</p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <img src="logo-seal.png" alt="TIPS seal"><br>
+    Texas Institute of Public Speaking (TIPS) &middot; tipstexas.org<br>
+    <i>Train, Certify, Provide Speaking Platforms.</i>
+    <div class="flinks"><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="certification.html">Certification</a> · <a href="academy.html">Academy</a> · <a href="roll.html">The Roll</a> · <a href="courses.html">Courses</a> · <a href="verify.html">Verify</a> · <a href="leadership.html">Leadership</a> · <a href="partner.html">Partner</a> · <a href="contact.html">Contact</a></div>
+    Enquiries: <a href="mailto:ceo@tolkzspeakers.com">ceo@tolkzspeakers.com</a>
+  </div>
+</footer>
+</body>
+</html>
