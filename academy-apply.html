@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Apply &amp; Enroll — TIPS Academy</title>
+<meta name="description" content="Apply and enroll in the TIPS Academy: CES, CPS, CPTC or the Complete Certification Pathway. Tuition by country of residence — Cameroon, International, United States, Canada, Europe.">
+<link rel="icon" type="image/png" href="favicon.png">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI', system-ui, -apple-system, Arial, sans-serif; background:#070d24; color:#eef1ff; line-height:1.6; }
+  a { text-decoration:none; }
+  .wrap { max-width:1080px; margin:0 auto; padding:0 22px; }
+  header { border-bottom:1px solid rgba(255,196,0,.25); background:rgba(10,18,48,.92); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; flex-wrap:wrap; gap:10px; }
+  .brand { display:flex; align-items:center; gap:13px; }
+  .brand img { width:52px; height:52px; }
+  .brand h1 { font-size:15.5px; letter-spacing:.12em; font-weight:700; line-height:1.25; }
+  .brand small { display:block; letter-spacing:.3em; color:#ffc400; font-size:10.5px; font-weight:600; }
+  .navlinks a { color:#dfe6ff; margin-left:18px; font-size:14px; }
+  .navlinks a:hover, .navlinks a.on { color:#ffc400; }
+  .hero { text-align:center; padding:64px 0 50px; }
+  .plaque { display:inline-block; background:#000; border:2px solid #ffc400; border-radius:20px; padding:18px 22px; box-shadow:0 18px 50px rgba(0,0,0,.55); }
+  .plaque img { width:min(300px,72vw); display:block; border-radius:8px; }
+  .hero .kicker, .pagehero .kicker { color:#ffc400; letter-spacing:.3em; font-size:12.5px; font-weight:700; text-transform:uppercase; }
+  .hero h2 { font-family:Georgia,serif; font-size:clamp(34px,6vw,56px); line-height:1.12; margin:20px auto 14px; max-width:820px; }
+  .hero h2 em { color:#ffc400; font-style:normal; }
+  .hero p { color:#b9c3e8; max-width:660px; margin:0 auto; font-size:17px; }
+  .motto { margin-top:16px; color:#ffc400; font-family:Georgia,serif; font-size:19px; letter-spacing:.06em; }
+  .pagehero { text-align:center; padding:58px 0 30px; }
+  .pagehero h2 { font-family:Georgia,serif; font-size:clamp(30px,5vw,44px); margin:14px auto 12px; }
+  .pagehero p { color:#b9c3e8; max-width:680px; margin:0 auto; font-size:16.5px; }
+  .routes { display:grid; grid-template-columns:1fr 1fr; gap:26px; padding:24px 0 8px; }
+  .cols3 { display:grid; grid-template-columns:1fr 1fr 1fr; gap:22px; padding:22px 0 8px; }
+  @media (max-width:820px){ .routes,.cols3{ grid-template-columns:1fr; } }
+  .card { background:linear-gradient(160deg,#101c4a,#0a1230); border:1px solid rgba(255,196,0,.35); border-radius:18px; padding:36px 30px; display:flex; flex-direction:column; }
+  .card.gold { border:2px solid #ffc400; }
+  .card .tag { align-self:flex-start; font-size:11.5px; letter-spacing:.22em; font-weight:700; color:#0a1230; background:#ffc400; border-radius:20px; padding:5px 13px; text-transform:uppercase; }
+  .card .tag.blue { background:#3350c8; color:#fff; }
+  .card h3 { font-family:Georgia,serif; font-size:25px; margin:18px 0 10px; }
+  .card p { color:#b9c3e8; font-size:15.5px; flex:1; }
+  .card ul { color:#dfe6ff; font-size:14.5px; margin:14px 0 22px 18px; }
+  .card ul li { margin:6px 0; }
+  .btn { display:inline-block; text-align:center; background:#ffc400; color:#0a1230; font-weight:700; padding:15px 22px; border-radius:12px; font-size:16px; }
+  .btn:hover { background:#ffd94d; }
+  .btn.ghost { background:transparent; color:#ffc400; border:2px solid #ffc400; }
+  .btn.ghost:hover { background:rgba(255,196,0,.12); }
+  .fine { font-size:12.5px; color:#8b96c4; text-align:center; margin-top:12px; }
+  .section { max-width:820px; margin:0 auto; padding:16px 0 6px; }
+  .section h3 { font-family:Georgia,serif; font-size:26px; margin:26px 0 10px; }
+  .section p { color:#c6cfef; font-size:16px; margin:0 0 14px; }
+  .section ul { color:#dfe6ff; margin:0 0 16px 20px; }
+  .section ul li { margin:7px 0; }
+  .section a.inline { color:#ffc400; }
+  .integrity { margin:48px 0 0; border-top:1px solid rgba(255,196,0,.25); border-bottom:1px solid rgba(255,196,0,.25); padding:28px 10px; text-align:center; }
+  .integrity strong { color:#ffc400; }
+  .integrity p { max-width:760px; margin:0 auto; color:#dfe6ff; font-size:16.5px; }
+  .cta { text-align:center; padding:34px 0 8px; }
+  footer { padding:40px 0 46px; text-align:center; color:#8b96c4; font-size:13.5px; }
+  footer img { width:64px; height:64px; margin-bottom:10px; }
+  footer a { color:#ffc400; }
+  footer .flinks { margin:10px 0; }
+  footer .flinks a { color:#b9c3e8; margin:0 9px; }
+  footer .flinks a:hover { color:#ffc400; }
+  /* Academy additions */
+  .section ol { color:#dfe6ff; margin:0 0 16px 22px; }
+  .section ol li { margin:7px 0; }
+  .card .second { margin-top:10px; }
+  .fees { width:100%; border-collapse:collapse; margin:6px 0 16px; font-size:15.5px; }
+  .fees th, .fees td { border:1px solid rgba(255,196,0,.3); padding:10px 12px; text-align:left; color:#dfe6ff; }
+  .fees th { background:rgba(255,196,0,.1); color:#ffc400; font-family:Georgia,serif; font-weight:700; }
+  .fees td.num, .fees th.num { text-align:right; }
+</style>
+<style>
+  form.apply { max-width:680px; margin:0 auto; text-align:left; }
+  form.apply label { display:block; font-size:13.5px; letter-spacing:.08em; color:#ffc400; font-weight:700; margin:18px 0 6px; text-transform:uppercase; }
+  form.apply input, form.apply select, form.apply textarea { width:100%; padding:13px 14px; border-radius:10px; border:1px solid rgba(255,196,0,.4); background:#0a1230; color:#eef1ff; font-size:16px; font-family:inherit; }
+  form.apply button { width:100%; margin-top:26px; cursor:pointer; border:none; }
+  .steps { max-width:820px; margin:0 auto; }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">
+      <img src="logo-seal.png" alt="TIPS seal">
+      <h1>TEXAS INSTITUTE OF PUBLIC SPEAKING<small>TIPS &middot; TRAIN &middot; CERTIFY &middot; PROVIDE PLATFORMS</small></h1>
+    </a>
+    <nav class="navlinks"><a href="index.html">Home</a><a href="about.html">About</a><a href="certification.html">Certification</a><a href="academy.html" class="on">Academy</a><a href="roll.html">The Roll</a><a href="courses.html">Courses</a><a href="verify.html">Verify</a><a href="leadership.html">Leadership</a><a href="partner.html">Partner</a><a href="contact.html">Contact</a></nav>
+  </div>
+</header>
+<main class="wrap">
+  <section class="pagehero">
+    <div class="kicker">TIPS Academy &middot; Admissions</div>
+    <h2>Apply &amp; Enroll</h2>
+    <p>Enrollment is open. Complete this short application and we will confirm your program, your entry route and your exact tuition for your country of residence &mdash; then your training begins.</p>
+  </section>
+
+  <section class="section steps">
+    <h3>How enrollment works</h3>
+    <ol>
+      <li><strong>Apply</strong> &mdash; this form takes about three minutes.</li>
+      <li><strong>Confirm</strong> &mdash; you receive an email confirming your program and tuition.</li>
+      <li><strong>Pay</strong> &mdash; Cameroon residents pay by MTN Mobile Money; all other residents receive a secure card payment link with their confirmation. Deposit-and-installment plans apply on CPS, CPTC and the Complete Pathway.</li>
+      <li><strong>Train</strong> &mdash; your program opens, with your examination path set out from day one: training, knowledge examination (70%+), practical assessment (70%+), certificate.</li>
+    </ol>
+  </section>
+
+  <form class="apply" id="applyForm">
+    <label for="f-name">Full name</label>
+    <input id="f-name" type="text" required autocomplete="name">
+    <label for="f-email">Email address</label>
+    <input id="f-email" type="email" required autocomplete="email">
+    <label for="f-phone">Phone / WhatsApp</label>
+    <input id="f-phone" type="tel" autocomplete="tel">
+    <label for="f-country">Country of residence (sets your tuition)</label>
+    <select id="f-country" required>
+      <option value="">Select&hellip;</option>
+      <option>Cameroon</option>
+      <option>United States</option>
+      <option>Canada</option>
+      <option>United Kingdom</option>
+      <option>Europe (other)</option>
+      <option>Other international</option>
+    </select>
+    <label for="f-program">Program</label>
+    <select id="f-program" required>
+      <option value="">Select&hellip;</option>
+      <option value="CES">Certified Emerging Speaker (CES) — 4 weeks</option>
+      <option value="CPS">Certified Professional Speaker (CPS) — 8–12 weeks</option>
+      <option value="CPTC">Certified Professional Trainer &amp; Coach (CPTC) — 12–16 weeks</option>
+      <option value="Pathway">Complete Certification Pathway (CES + CPS + CPTC)</option>
+    </select>
+    <label for="f-entry">Entry route</label>
+    <select id="f-entry" required>
+      <option value="">Select&hellip;</option>
+      <option>Standard entry (start at my level's beginning)</option>
+      <option>Direct entry by experience (CPS / CPTC only — evidence requested)</option>
+    </select>
+    <label for="f-msg">Anything we should know? (optional)</label>
+    <textarea id="f-msg" rows="4"></textarea>
+    <button class="btn" type="submit">Submit Application &rarr;</button>
+    <p class="fine">Submitting opens your email app with the application addressed to the TIPS Academy admissions office (ceo@tolkzspeakers.com). If nothing opens, write to us directly at that address.</p>
+  </form>
+
+  <section class="section">
+    <h3>Tuition reminder</h3>
+    <p>CES: 25,000 FCFA &middot; $99 &middot; $495 / $495 CAD / &euro;495 &nbsp;|&nbsp; CPS: 75,000 FCFA &middot; $299 &middot; $1,495 in local currency &nbsp;|&nbsp; CPTC: 150,000 FCFA &middot; $599 &middot; $2,995 &nbsp;|&nbsp; Complete Pathway: 225,000 FCFA &middot; $899 &middot; $3,995. Full table on the <a class="inline" href="academy.html#tuition"><strong>Academy page</strong></a>.</p>
+  </section>
+
+</main>
+<footer>
+  <div class="wrap">
+    <img src="logo-seal.png" alt="TIPS seal"><br>
+    Texas Institute of Public Speaking (TIPS) &middot; tipstexas.org<br>
+    <i>Train, Certify, Provide Speaking Platforms.</i>
+    <div class="flinks"><a href="index.html">Home</a> · <a href="about.html">About</a> · <a href="certification.html">Certification</a> · <a href="academy.html">Academy</a> · <a href="roll.html">The Roll</a> · <a href="courses.html">Courses</a> · <a href="verify.html">Verify</a> · <a href="leadership.html">Leadership</a> · <a href="partner.html">Partner</a> · <a href="contact.html">Contact</a></div>
+    Enquiries: <a href="mailto:ceo@tolkzspeakers.com">ceo@tolkzspeakers.com</a>
+  </div>
+</footer>
+<script>
+  var q = new URLSearchParams(location.search).get('program');
+  var map = { ces: 'CES', cps: 'CPS', cptc: 'CPTC', pathway: 'Pathway' };
+  if (q && map[q.toLowerCase()]) document.getElementById('f-program').value = map[q.toLowerCase()];
+  document.getElementById('applyForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+    function v(id) { return document.getElementById(id).value.trim(); }
+    var subject = 'TIPS Academy Application — ' + v('f-program') + ' — ' + v('f-name');
+    var body = ['Full name: ' + v('f-name'), 'Email: ' + v('f-email'), 'Phone/WhatsApp: ' + v('f-phone'),
+      'Country of residence: ' + v('f-country'), 'Program: ' + v('f-program'), 'Entry route: ' + v('f-entry'),
+      'Notes: ' + v('f-msg')].join('\n');
+    location.href = 'mailto:ceo@tolkzspeakers.com?cc=talktooliver77@gmail.com&subject=' +
+      encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+  });
+</script>
+</body>
+</html>
